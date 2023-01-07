@@ -38,20 +38,17 @@ class _LessoneOne extends State<LessoneOneHomeWorkTwo> {
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
             const Expanded(
-                child:  Center(
-                  child: Text(
-              "image",
-              textAlign: TextAlign.center,
-            ),
-                )),
+                child: Center(
+              child: Text(
+                "image",
+                textAlign: TextAlign.center,
+              ),
+            )),
             Container(
               color: Colors.green,
               child: SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
-              
                 child: Row(
-
-              
                   children: [
                     widgetAdd(),
                     widgetAdd(),
