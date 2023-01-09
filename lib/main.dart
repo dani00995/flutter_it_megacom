@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_it_megacom/homeWork/lesson_2_homework.dart';
 import 'package:flutter_it_megacom/homeWork/lessone_1_home_work.dart';
 import 'package:flutter_it_megacom/homeWork/lessone_1_home_work_2.dart';
 
@@ -17,11 +18,12 @@ class MyApp extends StatelessWidget {
       ),
 
       //HOME WORK
-      //Lessone 1    
+      //Lesson 1
       //home: const LessoneOneHomeWork(),
-      home: const LessoneOneHomeWorkTwo(),
+      //home: const LessoneOneHomeWorkTwo(),
+
+      //Lesson 2
+      home: const LessoneTwoHomeWork(),
     );
   }
 }
-
-
