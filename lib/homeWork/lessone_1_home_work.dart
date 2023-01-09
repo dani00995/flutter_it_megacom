@@ -8,13 +8,41 @@ class LessoneOneHomeWork extends StatefulWidget {
 }
 
 class _LessoneOne extends State<LessoneOneHomeWork> {
-  Widget myColumn(double marginTop) {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("First Screen of My apl"),
+        centerTitle: true,
+      ),
+      body: Container(
+        color: Colors.lightBlue,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: const [
+            MyColum(mainAxisAlignment: MainAxisAlignment.start),
+            MyColum(mainAxisAlignment: MainAxisAlignment.center),
+            MyColum(mainAxisAlignment: MainAxisAlignment.end)
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class MyColum extends StatelessWidget {
+  final MainAxisAlignment mainAxisAlignment;
+  const MyColum({
+    Key? key,
+    required this.mainAxisAlignment,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
     return Column(
-      mainAxisAlignment: MainAxisAlignment.start,
-      crossAxisAlignment: CrossAxisAlignment.center,
+      mainAxisAlignment: mainAxisAlignment,
       children: [
         Container(
-          margin: EdgeInsets.only(top: marginTop),
           width: 60,
           height: 60,
           color: Colors.red,
@@ -33,23 +61,6 @@ class _LessoneOne extends State<LessoneOneHomeWork> {
           child: const Center(child: Text("3")),
         )
       ],
-    );
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text("First Screen of My apl"),
-        centerTitle: true,
-      ),
-      body: Container(
-        color: Colors.lightBlue,
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [myColumn(10), myColumn(140), myColumn(260)],
-        ),
-      ),
     );
   }
 }
