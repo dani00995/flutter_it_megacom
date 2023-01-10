@@ -1,16 +1,41 @@
-# flutter_it_megacom
+# Мои курсы по Flutter (IT school MEGACOM)
 
-A new Flutter project.
+Пооект содержит практические работы сделанные мной во время обучение.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Каждая задача было разделено на отделные классы. Что бы посмотреть результат, нужно изменить в [main.dart](https://github.com/dani00995/flutter_it_megacom/blob/master/lib/main.dart) классе `home:`, на выбраннный Вами класс.
 
-A few resources to get you started if this is your first Flutter project:
+``` dart
+void main() {
+  runApp(const MyApp());
+}
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+      //HOME WORK
+      //Lesson 1
+      //home: const LessoneOneHomeWork(),
+      //home: const LessoneOneHomeWorkTwo(),
+
+      //Lesson 2
+      //home: const LessoneTwoHomeWork(),
+
+      //Lesson 3
+      //One Screen page - screenPage: 1
+      //Two Screen page - screenPage: 2
+      home: const LessonThreeHomework(screenPage: 2,),
+    );
+  }
+}
+```
+
+
