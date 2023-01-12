@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_it_megacom/const/AppImage.dart';
+import 'package:flutter_it_megacom/widgets/lesson_4_button.dart';
 
 class LessonFourPageOne extends StatelessWidget {
   const LessonFourPageOne({super.key});
@@ -7,6 +8,7 @@ class LessonFourPageOne extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: Stack(children: [
         SizedBox(
           child: Column(
@@ -16,14 +18,25 @@ class LessonFourPageOne extends StatelessWidget {
           ),
         ),
         SafeArea(
+    
             child: SizedBox(
                 width: double.infinity,
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
+                    Spacer(),
                     Image.asset(AppImage.welcomePhone),
                     const RichColorTexts(),
+                    const Padding(
+                      padding: EdgeInsets.only(top: 20,bottom: 10),
+                      child: Text(
+                        'I am a',
+                        style: TextStyle(
+                            fontSize: 20, fontWeight: FontWeight.w400),
+                      ),
+                    ),
+                    LessonFourButton(text: "Tenant", onPressed: () {}),
                     const Padding(
                       padding: EdgeInsets.symmetric(vertical: 10),
                       child: Text(
@@ -32,6 +45,8 @@ class LessonFourPageOne extends StatelessWidget {
                             fontSize: 20, fontWeight: FontWeight.w400),
                       ),
                     ),
+                    LessonFourButton(text: "Landlord", onPressed: () {}),
+                    SizedBox(height: 60,)
                   ],
                 )))
       ]),

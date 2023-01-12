@@ -23,6 +23,7 @@ class _LessoneOne extends State<LessoneOneHomeWork> {
             MyColum(mainAxisAlignment: MainAxisAlignment.start),
             MyColum(mainAxisAlignment: MainAxisAlignment.center),
             MyColum(mainAxisAlignment: MainAxisAlignment.end)
+            
           ],
         ),
       ),
