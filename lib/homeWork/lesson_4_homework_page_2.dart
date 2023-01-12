@@ -1,5 +1,7 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_it_megacom/const/AppImage.dart';
+import 'package:flutter_it_megacom/homeWork/lesson_4_homework_page_3.dart';
 import 'package:flutter_it_megacom/widgets/lesson_4_button.dart';
 import 'package:flutter_it_megacom/widgets/lesson_4_text_field.dart';
 
@@ -47,11 +49,20 @@ class LessonFourPageTwo extends StatelessWidget {
                               color: Colors.black),
                         ),
                       ),
-                      const LessonFourTextField(),
+                      const LessonFourTextField(
+                        hintText: 'Enter your phone number',
+                      ),
                       Container(
                           margin: const EdgeInsets.symmetric(vertical: 20),
                           child: LessonFourButton(
-                              text: 'Continue', onPressed: () {})),
+                              text: 'Continue',
+                              onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    CupertinoPageRoute(
+                                        builder: (builder) =>
+                                            const LessonFourPageThree()));
+                              })),
                       const Text("or",
                           style: TextStyle(
                               fontSize: 18,
@@ -98,5 +109,3 @@ class LessonFourPageTwo extends StatelessWidget {
     );
   }
 }
-
-

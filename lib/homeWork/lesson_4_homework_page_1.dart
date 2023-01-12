@@ -1,5 +1,7 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_it_megacom/const/AppImage.dart';
+import 'package:flutter_it_megacom/homeWork/lesson_4_homework_page_2.dart';
 import 'package:flutter_it_megacom/widgets/lesson_4_button.dart';
 
 class LessonFourPageOne extends StatelessWidget {
@@ -18,7 +20,6 @@ class LessonFourPageOne extends StatelessWidget {
           ),
         ),
         SafeArea(
-    
             child: SizedBox(
                 width: double.infinity,
                 child: Column(
@@ -29,14 +30,22 @@ class LessonFourPageOne extends StatelessWidget {
                     Image.asset(AppImage.welcomePhone),
                     const RichColorTexts(),
                     const Padding(
-                      padding: EdgeInsets.only(top: 20,bottom: 10),
+                      padding: EdgeInsets.only(top: 20, bottom: 10),
                       child: Text(
                         'I am a',
                         style: TextStyle(
                             fontSize: 20, fontWeight: FontWeight.w400),
                       ),
                     ),
-                    LessonFourButton(text: "Tenant", onPressed: () {}),
+                    LessonFourButton(
+                        text: "Tenant",
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              CupertinoPageRoute(
+                                  builder: (builder) =>
+                                      const LessonFourPageTwo()));
+                        }),
                     const Padding(
                       padding: EdgeInsets.symmetric(vertical: 10),
                       child: Text(
@@ -45,8 +54,18 @@ class LessonFourPageOne extends StatelessWidget {
                             fontSize: 20, fontWeight: FontWeight.w400),
                       ),
                     ),
-                    LessonFourButton(text: "Landlord", onPressed: () {}),
-                    SizedBox(height: 60,)
+                    LessonFourButton(
+                        text: "Landlord",
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              CupertinoPageRoute(
+                                  builder: (builder) =>
+                                      const LessonFourPageTwo()));
+                        }),
+                    SizedBox(
+                      height: 60,
+                    )
                   ],
                 )))
       ]),

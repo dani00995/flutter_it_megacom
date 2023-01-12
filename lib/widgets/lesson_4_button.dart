@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
+
 import 'package:google_fonts/google_fonts.dart';
 
 class LessonFourButton extends StatelessWidget {
@@ -14,13 +13,17 @@ class LessonFourButton extends StatelessWidget {
     return Container(
       width: double.infinity,
       height: 48,
-      margin: const EdgeInsets.symmetric(horizontal: 35),
+      margin: const EdgeInsets.symmetric(
+        horizontal: 35,
+      ),
       child: ElevatedButton(
-        style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25))),
+        style: ElevatedButton.styleFrom(
+            shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(25))),
         onPressed: onPressed,
         child: Text(text,
             style: TextStyle(
-              color: Colors.white,
+                color: Colors.white,
                 fontSize: 24,
                 fontWeight: FontWeight.w800,
                 fontFamily: GoogleFonts.poppins().fontFamily)),

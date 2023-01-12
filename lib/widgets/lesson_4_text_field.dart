@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 
 class LessonFourTextField extends StatelessWidget {
+  final String hintText;
   const LessonFourTextField({
     Key? key,
+    required this.hintText,
   }) : super(key: key);
 
   @override
@@ -15,11 +17,10 @@ class LessonFourTextField extends StatelessWidget {
         child: TextField(
           keyboardType: TextInputType.number,
           decoration: InputDecoration(
-              contentPadding: EdgeInsets.symmetric(
-                  vertical: 0, horizontal: 20),
-              border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(100)),
-              hintText: 'Enter your phone number',
+              contentPadding: EdgeInsets.symmetric(vertical: 0, horizontal: 20),
+              border:
+                  OutlineInputBorder(borderRadius: BorderRadius.circular(100)),
+              hintText: hintText,
               hintStyle: TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.w400,
