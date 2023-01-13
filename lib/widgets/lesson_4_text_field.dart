@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 
 class LessonFourTextField extends StatelessWidget {
   final String hintText;
+  final TextInputType? keyboardType;
   const LessonFourTextField({
     Key? key,
-    required this.hintText,
+    required this.hintText, this.keyboardType = TextInputType.text,
   }) : super(key: key);
 
   @override
@@ -15,7 +16,7 @@ class LessonFourTextField extends StatelessWidget {
       height: 50,
       child: Center(
         child: TextField(
-          keyboardType: TextInputType.number,
+          keyboardType: keyboardType,
           decoration: InputDecoration(
               contentPadding: EdgeInsets.symmetric(vertical: 0, horizontal: 20),
               border:

@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_it_megacom/const/AppImage.dart';
-import 'package:flutter_it_megacom/homeWork/lesson_4_homework_page_2.dart';
+import 'package:flutter_it_megacom/homeWork/lesson4/lesson_4_homework_page_2.dart';
 import 'package:flutter_it_megacom/widgets/lesson_4_button.dart';
 
 class LessonFourPageOne extends StatelessWidget {
