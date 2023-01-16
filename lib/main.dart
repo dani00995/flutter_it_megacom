@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_it_megacom/homeWork/lesson4/lesson_4_homework_page_1.dart';
 import 'package:flutter_it_megacom/homeWork/lesson4/lesson_4_homework_page_2.dart';
 import 'package:flutter_it_megacom/homeWork/lesson4/lesson_4_homework_page_3.dart';
+import 'package:flutter_it_megacom/homeWork/lesson5/lesson_5.dart';
 import 'package:flutter_it_megacom/homeWork/lesson_2_homework.dart';
 import 'package:flutter_it_megacom/homeWork/lesson_3_homework.dart';
 import 'package:flutter_it_megacom/homeWork/lessone_1_home_work.dart';
@@ -38,8 +39,11 @@ class MyApp extends StatelessWidget {
 
       //Lesson 4
       //home: const LessonFourPageOne(),
-      home: const LessonFourPageTwo(),
+      //home: const LessonFourPageTwo(),
       //home: const LessonFourPageThree(),
+
+      //Lesson 5
+      home: const LessonFive(),
     );
   }
 }
