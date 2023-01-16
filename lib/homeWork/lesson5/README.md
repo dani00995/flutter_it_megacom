@@ -1,5 +1,5 @@
 ## Полученный результат ⚡️
-<img src="https://github.com/dani00995/flutter_it_megacom/blob/master/result/gif/animateButton.gif?raw=true" width="360" height="480">
+<img src="https://github.com/dani00995/flutter_it_megacom/blob/master/result/gif/animateButton.gif?raw=true" width="260" height="480">
 
 ```Dart
 @override
