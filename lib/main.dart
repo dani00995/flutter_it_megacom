@@ -29,8 +29,9 @@ class MyApp extends StatelessWidget {
       //home: const LessoneOneHomeWork(),
       //home: const LessoneOneHomeWorkTwo(),
 
-      //Lesson 2
-      //home: const LessoneTwoHomeWork(),
+      //Lesson 2 and Lesson 5
+      //Lesson 5. add fun animated on clicked
+      home: const LessoneTwoHomeWork(),
 
       //Lesson 3
       //One Screen page - screenPage: 1
@@ -43,7 +44,7 @@ class MyApp extends StatelessWidget {
       //home: const LessonFourPageThree(),
 
       //Lesson 5
-      home: const LessonFive(),
+      //home: const LessonFive(),
     );
   }
 }
